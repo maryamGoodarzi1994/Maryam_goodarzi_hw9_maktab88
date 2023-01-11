@@ -1,0 +1,64 @@
+body {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 14px;
+}
+
+#stepOne {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #236c12;
+    padding: 2px 5px;
+
+}
+#stepTwo {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #236c12;
+    padding: 2px 5px;
+
+}
+#stepThree {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #236c12;
+    padding: 2px 5px;
+
+}
+
+strong {
+    color: #236c12;
+}
+
+i {
+    color: #df901f;
+    font-weight: 900;
+    margin-right: 5px;
+}
+.firstContainer{
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+.firstContainer p{
+    padding: 10px;
+}
+
+.secondContainer{
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+.secondContainer p{
+    padding: 10px;
+}
+
+.thirdContainer{
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+.thirdContainer p{
+    padding: 10px;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+

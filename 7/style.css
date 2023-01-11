@@ -1,0 +1,14 @@
+.progressBar{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+#inSide{
+    position: absolute;
+    background-color: #f8a500;
+    width: 10%;
+    height: 20px;
+}

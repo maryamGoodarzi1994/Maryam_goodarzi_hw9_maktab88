@@ -1,0 +1,64 @@
+main {
+    background-color: #f8a500;
+    display: flex;
+    align-items: center;
+
+}
+
+.home {
+    width: 33%;
+
+}
+
+.home a {
+    text-decoration: none;
+    color: #000;
+}
+
+#pagesTitle,
+#linkTitle {
+    color: #000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.pages,
+.links {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+}
+
+#pageMenu,
+#linkMenu {
+    display: none;
+    position: absolute;
+    background-color: #f8a500;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+#pageMenu a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#pageMenu a:hover {
+    background-color: #f8a500
+}
+
+#linkMenu a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#linkMenu a:hover {
+    background-color: #f8a500
+}
