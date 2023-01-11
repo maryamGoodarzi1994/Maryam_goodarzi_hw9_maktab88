@@ -1,23 +1,19 @@
-const generateProfileInformation = ({uid,avatar, city, postalCode, phoneNumber, position}, collapse = true) => {
+const generateProfileInformation = ({id,avatar, email}) => {
     return `
     <div class="col-2">
-    <img src="${avatar}" class="card-img-top p-2 rounded-4" alt="${uid}">
+    <img src="${avatar}" class="card-img-top p-2 rounded-4" alt="${id}">
 </div>
     <ul class="list-group list-group-flush my-4">
-        ${collapse ? '' : `<li class="list-group-item">uid: ${uid}</li>`}
-        <li class="list-group-item">position: ${position}</li>
-        <li class="list-group-item">city: ${city}</li>
-        ${collapse ? '' : `
-        <li class="list-group-item">postalCode: ${postalCode}</li>
-        <li class="list-group-item">phoneNumber: ${phoneNumber}</li>
-        `}
+         <li class="list-group-item">id: ${id}</li>
+         <li class="list-group-item">email: ${email}</li>
+       
     </ul>
     `
 }
 
-const uid = window.location.search.split('=')[1];
-const targetUser = userData.find(el => el.uid === Number(uid));
+const id = window.location.search.split('=')[1];
+const targetUser = users.find(el => el.id === Number(id));
 document.getElementById("root").innerHTML = `
-    <h4 class="ms-3 mt-3">${targetUser.firstname} ${targetUser.lastname}</h4>
+    <h4 class="ms-3 mt-3">${targetUser.first_name} ${targetUser.last_name}</h4>
     ${generateProfileInformation(targetUser, false)}
 `
